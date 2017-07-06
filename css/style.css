@@ -1,0 +1,51 @@
+/*styling main div*/
+.contain-animation{
+    padding: 10%;
+}
+/*styling the div containing the cycle image*/
+.contain-cycle {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  animation: drive 5s steps(50, end) infinite;/*steps 50 will move like driving*/
+  -webkit-animation: drive 5s steps(50, end) infinite;/* Safari 4.0 - 8.0 */
+}
+
+/*keyframe for drivind*/
+@keyframes drive {
+ 
+    0%   {left: 0px;}
+    25%  {left: 500px;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes drive {
+    0%   {left: 0px;}
+    25%  {left: 500px;}
+}
+
+/*
+.contain-animation{
+    padding: 10%;
+}
+
+.contain-cycle {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  animation: drive 5s steps(4, end) infinite;
+  -webkit-animation: drive 5s steps(4, end) infinite;
+}
+
+@keyframes drive {
+  to {
+    transform: translateX(640px);
+  }
+}
+
+@-webkit-keyframes drive {
+  to {
+    transform: translateX(640px);
+  }
+}
+*/
+
